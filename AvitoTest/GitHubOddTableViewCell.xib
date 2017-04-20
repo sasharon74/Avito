@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="github_odd_cell" selectionStyle="default" indentationWidth="10" reuseIdentifier="github_odd_cell" rowHeight="131" id="b7o-Sa-CfQ" customClass="GitHubOddTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="131"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b7o-Sa-CfQ" id="3ay-5O-Xir">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="131"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gGw-T5-cSu">
+                        <rect key="frame" x="15" y="15" width="100" height="100"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="8ob-5D-J8B"/>
+                            <constraint firstAttribute="width" constant="100" id="fCI-1r-JeK"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zjd-YN-4Mp">
+                        <rect key="frame" x="130" y="15" width="230" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osd-EI-S0M">
+                        <rect key="frame" x="130" y="46" width="230" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="RDw-gt-SVU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.27755789159722227" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Zjd-YN-4Mp" firstAttribute="top" secondItem="3ay-5O-Xir" secondAttribute="top" constant="15" id="67N-Gy-Yz2"/>
+                    <constraint firstItem="osd-EI-S0M" firstAttribute="top" secondItem="Zjd-YN-4Mp" secondAttribute="bottom" constant="10" id="8ps-mc-kJS"/>
+                    <constraint firstAttribute="trailing" secondItem="Zjd-YN-4Mp" secondAttribute="trailing" constant="15" id="FsN-HZ-CFd"/>
+                    <constraint firstItem="Zjd-YN-4Mp" firstAttribute="leading" secondItem="gGw-T5-cSu" secondAttribute="trailing" constant="15" id="H9b-7l-rPR"/>
+                    <constraint firstAttribute="trailing" secondItem="osd-EI-S0M" secondAttribute="trailing" constant="15" id="Qc2-cy-ta2"/>
+                    <constraint firstItem="gGw-T5-cSu" firstAttribute="top" secondItem="3ay-5O-Xir" secondAttribute="top" constant="15" id="RHk-jF-2lg"/>
+                    <constraint firstItem="gGw-T5-cSu" firstAttribute="leading" secondItem="3ay-5O-Xir" secondAttribute="leading" constant="15" id="Zcv-12-HRH"/>
+                    <constraint firstItem="osd-EI-S0M" firstAttribute="leading" secondItem="gGw-T5-cSu" secondAttribute="trailing" constant="15" id="fw8-HU-8Pg"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="osd-EI-S0M" secondAttribute="bottom" constant="15" id="qNI-1b-s6o"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellImageView" destination="gGw-T5-cSu" id="EJF-Uz-iiy"/>
+                <outlet property="linkLabel" destination="osd-EI-S0M" id="HZw-LD-xoa"/>
+                <outlet property="loginLabel" destination="Zjd-YN-4Mp" id="qNS-J1-FQu"/>
+            </connections>
+            <point key="canvasLocation" x="22.5" y="-1.5"/>
+        </tableViewCell>
+    </objects>
+</document>

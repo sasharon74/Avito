@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Git Hub View Controller-->
+        <scene sceneID="p4f-bi-f4b">
+            <objects>
+                <viewController storyboardIdentifier="github_view_id" id="bqH-HO-Lnq" customClass="GitHubViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tSI-E0-LUg"/>
+                        <viewControllerLayoutGuide type="bottom" id="3gK-lm-xfs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5OX-2O-DXI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="131" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9zZ-UQ-iHV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9zZ-UQ-iHV" secondAttribute="trailing" id="3aB-G4-RgJ"/>
+                            <constraint firstItem="3gK-lm-xfs" firstAttribute="top" secondItem="9zZ-UQ-iHV" secondAttribute="bottom" id="KEg-Jm-COd"/>
+                            <constraint firstItem="9zZ-UQ-iHV" firstAttribute="leading" secondItem="5OX-2O-DXI" secondAttribute="leading" id="abq-Sm-vIX"/>
+                            <constraint firstItem="9zZ-UQ-iHV" firstAttribute="top" secondItem="tSI-E0-LUg" secondAttribute="bottom" id="kew-ke-tf7"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="gitHubTableView" destination="9zZ-UQ-iHV" id="Rms-iq-EDW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D1T-S8-K3f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>

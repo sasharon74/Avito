@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E1v-hy-0fl">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="textShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                            </navigationBar>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="TjK-hR-n6x">
+                                <rect key="frame" x="130" y="20" width="115" height="29"/>
+                                <segments>
+                                    <segment title="iTunes"/>
+                                    <segment title="GitHub"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="dc4-Gd-a97"/>
+                                </connections>
+                            </segmentedControl>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Rrd-d2-S0a">
+                                <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PjN-11-waC">
+                                <rect key="frame" x="0.0" y="100" width="375" height="567"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Rrd-d2-S0a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3m6-5X-Kk5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PjN-11-waC" secondAttribute="bottom" id="542-96-2Kq"/>
+                            <constraint firstItem="PjN-11-waC" firstAttribute="top" secondItem="Rrd-d2-S0a" secondAttribute="bottom" id="G9O-Kx-eIo"/>
+                            <constraint firstAttribute="trailing" secondItem="E1v-hy-0fl" secondAttribute="trailing" id="JHd-at-9W1"/>
+                            <constraint firstItem="PjN-11-waC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PFX-xf-Aij"/>
+                            <constraint firstAttribute="trailing" secondItem="PjN-11-waC" secondAttribute="trailing" id="Pj3-x1-Yv5"/>
+                            <constraint firstItem="TjK-hR-n6x" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="Qou-kz-Hv2"/>
+                            <constraint firstItem="TjK-hR-n6x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xgi-F0-OsP"/>
+                            <constraint firstItem="E1v-hy-0fl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="gJQ-oj-1VD"/>
+                            <constraint firstAttribute="trailing" secondItem="Rrd-d2-S0a" secondAttribute="trailing" id="kc6-3j-v6O"/>
+                            <constraint firstItem="Rrd-d2-S0a" firstAttribute="top" secondItem="E1v-hy-0fl" secondAttribute="bottom" constant="-8" id="pSs-yR-y2Y"/>
+                            <constraint firstItem="E1v-hy-0fl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="s1L-BI-jpB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mhe-Eu-iB1"/>
+                    <connections>
+                        <outlet property="customContainerView" destination="PjN-11-waC" id="CLk-Kj-oYs"/>
+                        <outlet property="customSearchBar" destination="Rrd-d2-S0a" id="3hQ-5C-Ps7"/>
+                        <outlet property="customSegmentControl" destination="TjK-hR-n6x" id="HmJ-yW-OES"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="845.60000000000002" y="-645.42728635682158"/>
+        </scene>
+    </scenes>
+</document>

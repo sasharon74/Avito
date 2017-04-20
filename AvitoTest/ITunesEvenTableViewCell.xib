@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="itunes_even_cell" rowHeight="131" id="ZNj-tb-4Ey" customClass="ITunesEvenTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="131"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZNj-tb-4Ey" id="WSu-Z4-nIw">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="131"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CBj-Q4-hnO">
+                        <rect key="frame" x="260" y="15" width="100" height="100"/>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="Kjl-UV-F3I"/>
+                            <constraint firstAttribute="height" constant="100" id="scb-ZB-kFf"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5M-3b-eXO">
+                        <rect key="frame" x="15" y="15" width="230" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukM-3k-UEa">
+                        <rect key="frame" x="15" y="46" width="230" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="18" id="2yS-VZ-jna"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CBj-Q4-hnO" firstAttribute="top" secondItem="WSu-Z4-nIw" secondAttribute="top" constant="15" id="Fme-Zi-nXi"/>
+                    <constraint firstAttribute="trailing" secondItem="CBj-Q4-hnO" secondAttribute="trailing" constant="15" id="GD2-2F-u5g"/>
+                    <constraint firstItem="ukM-3k-UEa" firstAttribute="leading" secondItem="WSu-Z4-nIw" secondAttribute="leading" constant="15" id="Ow4-Qg-x5w"/>
+                    <constraint firstItem="Z5M-3b-eXO" firstAttribute="top" secondItem="WSu-Z4-nIw" secondAttribute="top" constant="15" id="QCf-Qg-oGg"/>
+                    <constraint firstItem="ukM-3k-UEa" firstAttribute="top" secondItem="Z5M-3b-eXO" secondAttribute="bottom" constant="10" id="UlG-5k-F35"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="ukM-3k-UEa" secondAttribute="bottom" constant="15" id="dLi-ec-Imw"/>
+                    <constraint firstItem="Z5M-3b-eXO" firstAttribute="leading" secondItem="WSu-Z4-nIw" secondAttribute="leading" constant="15" id="dd4-Rh-GPD"/>
+                    <constraint firstItem="CBj-Q4-hnO" firstAttribute="leading" secondItem="Z5M-3b-eXO" secondAttribute="trailing" constant="15" id="dza-HI-hpH"/>
+                    <constraint firstItem="CBj-Q4-hnO" firstAttribute="leading" secondItem="ukM-3k-UEa" secondAttribute="trailing" constant="15" id="tMW-An-9DD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="authorLabel" destination="ukM-3k-UEa" id="raL-Xf-wBk"/>
+                <outlet property="cellImageView" destination="CBj-Q4-hnO" id="pgS-c1-GVP"/>
+                <outlet property="nameItemLabel" destination="Z5M-3b-eXO" id="vrL-dE-EyX"/>
+            </connections>
+            <point key="canvasLocation" x="61.5" y="121.5"/>
+        </tableViewCell>
+    </objects>
+</document>
